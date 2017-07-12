@@ -14,31 +14,31 @@ restaurants_attributes = [
     name:         "Epicure au Bristol",
     address:      "112 rue du Fg St-Honoré 75008 Paris",
     category:     "italian",
-    phone_number: 0296856548
+    phone_number: "02 96 85 65 48"
   },
   {
     name:         "La truffière",
     address:      "4 rue Blainville 75005 Paris",
     category:     "chinese",
-    phone_number: 0679584525
+    phone_number: "02 96 85 65 48"
   },
   {
     name:         "Le pré catelan",
     address:      "route de Suresnes 75016 Paris",
     category:     "french",
-    phone_number: 0745859565
+    phone_number: "02 96 85 65 48"
   },
   {
     name:         "Chez Jean-Mich",
     address:      "Place de l'Eglise 22800 Boquého",
     category:     "belgian",
-    phone_number: 0648495948
+    phone_number: "02 96 85 65 48"
   },
   {
     name:         "Le St-Do",
     address:      "Place de la Mairie 22800 Saint-Donan",
     category:     "french",
-    phone_number: 0296739594
+    phone_number: "02 96 85 65 48"
   }
 ]
 Restaurant.create!(restaurants_attributes)

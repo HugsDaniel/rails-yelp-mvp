@@ -1,10 +1,11 @@
 class RestaurantsController < ApplicationController
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
   def index
-    @restaurant = Restaurant.all
+    @restaurants = Restaurant.all
   end
 
   def show
+    @review = Review.new
   end
 
   def new
@@ -20,8 +21,8 @@ class RestaurantsController < ApplicationController
   end
 
   def update
-    @restaurant.update(restaurant_params)
-    redirect_to restaurant_path(@restaurant)
+    # @restaurant.update(restaurant_params)
+    # redirect_to restaurant_path(@restaurant)
   end
 
   def destroy
@@ -35,5 +36,4 @@ class RestaurantsController < ApplicationController
     def restaurant_params
       params.require(:restaurant).permit(:name, :address, :category, :phone_number)
     end
-end
 end

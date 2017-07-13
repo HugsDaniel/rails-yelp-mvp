@@ -45,6 +45,8 @@
   <%= f.submit class: "btn btn-primary" %>
 <% end %>
 <br>
+      <td><%= link_to 'Edit', edit_restaurant_path(restaurant), class: "btn btn-primary" %></td>
+<td><%= link_to 'Destroy', restaurant, class: "btn btn-primary", method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
 <!-- <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> | -->
 <%= link_to 'Back', restaurants_path, class: "btn btn-primary" %>
